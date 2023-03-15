@@ -18,7 +18,9 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-            docker build -t $IMAGE_NAME .
+            source VERSION
+            TAG=$VMAJOR.$VMINOR.$VPATCH.$CIRCLE_SHA1
+            docker build -t $IMAGE_NAME:$TAG .
       - run:
           name: Archive Docker image
           command: docker save -o image.tar $IMAGE_NAME
@@ -38,12 +40,8 @@ jobs:
       - run:
           name: Publish Docker Image to Docker Hub
           command: |
-            source VERSION
-            TAG=$VMAJOR.$VMINOR.$VPATCH.$CIRCLE_SHA1
-            docker image tag $IMAGE_NAME $IMAGE_NAME:$latest
-            docker image tag $IMAGE_NAME $IMAGE_NAME:TAG
             echo "$DOCKERHUB_PWD" | docker login -u "$DOCKERHUB_USER" --password-stdin
-            docker push -all-tags $IMAGE_NAME
+            docker push $IMAGE_NAME
 workflows:
   version: 2
   build-master:
