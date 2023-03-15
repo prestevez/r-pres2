@@ -12,7 +12,6 @@ RUN /rocker_scripts/install_pandoc.sh
 RUN /rocker_scripts/install_tidyverse.sh
 RUN /rocker_scripts/install_verse.sh
 
-
 # Copy my scripts
 COPY scripts /tmp/scripts
 
