@@ -2,7 +2,7 @@
 
 Dockerfile for personal R docker image. Based on [rocker-org/r-ver](https://github.com/rocker-org/rocker-versioned2).
 
-Status of CI build: [![CircleCI](https://circleci.com/gh/prestevez/r-pres/tree/master.svg?style=svg)](https://circleci.com/gh/prestevez/r-pres/tree/master)
+Status of CI build: [![CircleCI](https://dl.circleci.com/status-badge/img/gh/prestevez/r-pres2/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/prestevez/r-pres2/tree/main)
 
 ## Base image
 
