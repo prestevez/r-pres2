@@ -51,7 +51,7 @@ workflows:
       - build:
           filters:
             branches:
-              only: master
+              only: main
           context:
               - authentication
       - publish-latest:
@@ -59,7 +59,7 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: main
           context:
             - authentication
   weekly:
