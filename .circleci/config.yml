@@ -23,12 +23,12 @@ jobs:
           name: Build and push using buildx
           command: |
             source VERSION
-            TAG=$VMAJOR.$VMINOR.${CIRCLE_SHA1:0:7}
+            TAG=$CIRCLE_BRANCH.$VMAJOR.$VMINOR.${CIRCLE_SHA1:0:7}
             docker buildx create --use
             docker buildx build . \
               --platform linux/amd64,linux/arm64 \
               -t $IMAGE_NAME:$TAG \
-              -t $IMAGE_NAME:latest \
+              -t $IMAGE_NAME:$CIRCLE_BRANCH \
               --push
 workflows:
   version: 2
