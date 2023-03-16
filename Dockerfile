@@ -24,4 +24,4 @@ RUN /tmp/scripts/install_config.sh
 RUN /rocker_scripts/default_user.sh
 
 # Install my core packages
-# RUN /tmp/scripts/install_my_core_packages.sh
+RUN /tmp/scripts/install_my_core_packages.sh

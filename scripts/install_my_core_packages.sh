@@ -11,8 +11,6 @@ install2.r --error --skipinstalled -n "$NCPUS" \
     car \
     Cairo \
     texreg \
-    downloader \
-    data.table \
     languageserver \
     httpgd \
     vscDebugger 

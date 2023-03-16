@@ -19,9 +19,9 @@ Status of CI build: [![CircleCI](https://dl.circleci.com/status-badge/img/gh/pre
 Should only contain bare minimum of packages.
 
 - [x] tidyverse
-- [x] tidymodels
+- [ ] tidymodels # Do I reallyy need this?
 - [ ] ggthemes
-- [x] RMarkdown
+- [x] rmarkdown
 - [x] devtools
 - [ ] Cairo
 - [ ] car
