@@ -43,4 +43,4 @@ Should only contain bare minimum of packages.
 - [x] Create non-root user
 - [ ] Create image for both architectures
     - [x] `linux/amd64` (Intel chips)
-    - [ ] `linux/arm64` (ARM/Mac chips) #C Currently fails, must investigate further
+    - [ ] `linux/arm64` (ARM/Mac chips) #Currently fails, must investigate further
