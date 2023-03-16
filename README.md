@@ -35,7 +35,7 @@ Should only contain bare minimum of packages.
 ## Rpackages required for vscode
 - [x] languageserver
 - [x] httpgd
-- [ ] vscDebugger
+- [x] vscDebugger
 
 
 ## To do
