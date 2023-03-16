@@ -18,18 +18,11 @@ jobs:
       - run:
           name: Login to DockerHub
           command: echo "$DOCKERHUB_PWD" | docker login -u "$DOCKERHUB_USER" --password-stdin
-      - run: 
-          name: Create TAG variable
-          command: |
-            source VERSION
-            TAG=$VMAJOR.$VMINOR.${CIRCLE_SHA1:0:7}
-            echo $TAG
-            echo 'export TAG' >> "$BASH_ENV"
       - run:
           name: Build and push using buildx
           command: |
-            source $BASH_ENV
-            echo $TAG
+            source VERSION
+            TAG=$VMAJOR.$VMINOR.${CIRCLE_SHA1:0:7}
             docker buildx build . \
               --platform linux/amd64,linux/arm64/v8 \
               -t $IMAGE_NAME:$TAG \
