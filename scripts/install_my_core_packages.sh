@@ -12,8 +12,9 @@ install2.r --error --skipinstalled -n "$NCPUS" \
     Cairo \
     texreg \
     languageserver \
-    httpgd \
-    vscDebugger 
+    httpgd 
+
+R -e 'devtools::install_github("ManuelHentschel/vscDebugger")'
 
 # Clean up
 rm -rf /var/lib/apt/lists/*

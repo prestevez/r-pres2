@@ -20,21 +20,21 @@ Should only contain bare minimum of packages.
 
 - [x] tidyverse
 - [ ] tidymodels # Do I reallyy need this?
-- [ ] ggthemes
+- [x] ggthemes
 - [x] rmarkdown
 - [x] devtools
-- [ ] Cairo
-- [ ] car
-- [ ] texreg
-- [ ] downloader
-- [ ] data.table
+- [x] Cairo
+- [x] car
+- [x] texreg
+- [x] downloader
+- [x] data.table
 - [x] parallel # Already installed with base
 - [x] DBI
 
 
 ## Rpackages required for vscode
-- [ ] languageserver
-- [ ] httpgd
+- [x] languageserver
+- [x] httpgd
 - [ ] vscDebugger
 
 
@@ -42,5 +42,5 @@ Should only contain bare minimum of packages.
 
 - [x] Create non-root user
 - [ ] Create image for both architectures
-    - [ ] `linux/amd64` (Intel chips)
+    - [x] `linux/amd64` (Intel chips)
     - [ ] `linux/arm64` (ARM/Mac chips)
