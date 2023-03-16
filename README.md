@@ -19,7 +19,7 @@ Status of CI build: [![CircleCI](https://dl.circleci.com/status-badge/img/gh/pre
 Should only contain bare minimum of packages.
 
 - [x] tidyverse
-- [ ] tidymodels # Do I reallyy need this?
+- [ ] tidymodels # Do I really need this?
 - [x] ggthemes
 - [x] rmarkdown
 - [x] devtools
@@ -43,4 +43,4 @@ Should only contain bare minimum of packages.
 - [x] Create non-root user
 - [ ] Create image for both architectures
     - [x] `linux/amd64` (Intel chips)
-    - [ ] `linux/arm64` (ARM/Mac chips)
+    - [ ] `linux/arm64` (ARM/Mac chips) #C Currently fails, must investigate further
