@@ -22,7 +22,9 @@ jobs:
           name: Create TAG variable
           command: |
             source VERSION
-            echo 'export TAG={$VMAJOR}.${VMINOR}.${CIRCLE_SHA1:0:7}' >> "$BASH_ENV"
+            TAG=$VMAJOR.$VMINOR.${CIRCLE_SHA1:0:7}
+            echo $TAG
+            echo 'export TAG' >> "$BASH_ENV"
       - run:
           name: Build and push using buildx
           command: |
